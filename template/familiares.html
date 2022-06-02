@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    Los familiares son ** visualizar la tabla sqlite**
+    {% for fami in tablafamilia %}
+      <h2> El DNI de la persona es: {{fami.dni}} </h2> 
+      <h1> El NOMBRE de la persona es: {{fami.nombre}} </h1> 
+      <h1> La edad de la persona es: {{fami.edad}} </h1> 
+
+    {% endfor %}
 </body>
 </html>
