@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('bienvenido/',bienvenido, name='bienvenido'),
     path('autor/',autor, name='autor'),
-    path('familiares/',include, ('familiares.urls'))
+    path('familiares/',include ('familiares.urls'))
 ]
 
 # path('familiares1/',familiares1, name='familiares1'),
